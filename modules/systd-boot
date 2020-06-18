@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+# GNOME Plugins:
+apt remove -y grub2-*
+#
+# Enable sytemd-boot
+update-initramfs -c -k all
+bootctl install
+#

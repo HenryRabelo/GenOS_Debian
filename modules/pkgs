@@ -1,0 +1,38 @@
+#!/bin/bash
+#
+apt update
+apt dist-upgrade -y
+#
+# Backend:
+apt install flatpak tlp unar chrome-gnome-shell gamemode plymouth-themes adwaita-icon-theme gnome-backgrounds
+#
+# Gaming Toolset:
+#sudo apt install steam-devices xboxdrv xserver-xorg-input-joystick -y
+#
+# GNOME Extensions:
+apt install git make gettext gnome-shell-extensions gnome-shell-extension-{dashtodock,caffeine,appindicator,desktop-icons}
+#
+# Suplementary Icon Themes:
+apt install elementary-xfce-icon-theme
+#
+# GenOS Settings:
+apt install gthumb gnome-software gnome-software-plugin-flatpak
+#
+# Core GNOME Apps:
+#apt install nautilus gedit totem evince file-roller geary lollypop gnome-calendar gnome-clocks
+#
+# GNOME Recorders:
+#apt install gnome-sound-recorder cheese
+#
+# GNOME Utils:
+#apt install gnome-calculator gnome-screenshot gnome-control-center gnome-disks gnome-characters gnome-logs deja-dup bijiben
+#
+# GNOME User Utils:
+apt install gnome-usage gnome-terminal
+#
+# GNOME Dev Utils:
+#apt install gnome-system-monitor gnome-todo gnome-builder devhelp sysprof baobab seahorse fractal tilix tilix-nautilus seahorse-nautilus
+#
+# GNOME Games:
+#apt install gnome-chess gnome-2048 gnome-mahjongg gnome-mines
+#

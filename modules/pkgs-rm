@@ -1,0 +1,25 @@
+#!/bin/bash
+#
+# Generic Apps:
+apt remove -y transmission-gtk xterm firefox-esr
+#
+# GNOME Plugins:
+apt remove -y nautilus-extension-gnome-terminal nautilus-extension-brasero nautilus-sendto
+#
+# GNOME Core Apps:
+apt remove gedit gnome-clocks gnome-calendar gnome-calculator gnome-characters gnome-fonts gnome-logs evince
+#
+# GNOME Accessories:
+apt remove -y gnome-{maps,documents,todo,contacts,weather,music,sound-recorder,tweaks} evolution vinagre
+#
+# GNOME Multimedia:
+apt remove -y shotwell eog cheese rhythmbox simple-scan
+#
+# GNOME Developer Tools:
+apt remove -y gnome-system-monitor baobab seahorse gnome-terminal
+#
+# GNOME Games:
+apt remove -y quadrapassel iagno lightsoff swell-foop hitori tali four-in-a-row five-or-more aisleriot gnome-sudoku gnome-mahjongg gnome-chess gnome-mines gnome-robots gnome-klotski gnome-tetravex gnome-taquin gnome-nibbles
+#
+apt autoremove -y
+#

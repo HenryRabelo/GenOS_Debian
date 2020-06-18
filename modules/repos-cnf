@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+# Enable Debian Testing:
+mv /etc/apt/sources.list /etc/apt/sources.list.old
+cp ./apt/src-list /etc/apt/sources.list
+#
+# Configure Package Pinning
+mv /etc/apt/preferences.d/my_preferences /etc/apt/preferences.d/my_preferences.old
+cp ./apt/pin /etc/apt/preferences.d/my_preferences
+#
