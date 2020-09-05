@@ -1,15 +1,10 @@
 #!/bin/bash
 #
-# Ctrl + Alt + F1 Before Executing
-#
 chmod +x ./modules/*
-sudo su -
 #
-./modules/repos-cnf
-#./modules/systd-boot
-./modules/pkgs-rm
-./modules/pkgs
-./modules/syst-settings
+sudo ./modules/pkgs
+sudo ./modules/pkgs-rm
+./modules/extensions
+sudo ./modules/syst-config
 ./modules/flatpak
-./modules/extensions-git
 #
