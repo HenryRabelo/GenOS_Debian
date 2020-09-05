@@ -2,8 +2,9 @@
 #
 chmod +x ./modules/*
 #
-sudo ./modules/pkgs
+sudo ./modules/repos-cnf
 sudo ./modules/pkgs-rm
+sudo ./modules/pkgs
 ./modules/extensions
 sudo ./modules/syst-config
 ./modules/flatpak
