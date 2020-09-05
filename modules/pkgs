@@ -1,16 +1,16 @@
 #!/bin/bash
 #
 apt update
-apt dist-upgrade -y
+apt full-upgrade -y
 #
 # Backend:
-apt install flatpak tlp unar chrome-gnome-shell gamemode plymouth-themes adwaita-icon-theme gnome-backgrounds
+apt install flatpak tlp wget unar chrome-gnome-shell gamemode plymouth-themes adwaita-icon-theme gnome-backgrounds
 #
 # Gaming Toolset:
 #sudo apt install steam-devices xboxdrv xserver-xorg-input-joystick -y
 #
 # GNOME Extensions:
-apt install git make gettext gnome-shell-extensions gnome-shell-extension-{dashtodock,caffeine,appindicator,desktop-icons}
+apt install gnome-shell-extensions gnome-shell-extension-{dashtodock,caffeine,appindicator,desktop-icons}
 #
 # Suplementary Icon Themes:
 apt install elementary-xfce-icon-theme
@@ -31,7 +31,7 @@ apt install gthumb gnome-software gnome-software-plugin-flatpak
 apt install gnome-usage gnome-terminal
 #
 # GNOME Dev Utils:
-#apt install gnome-system-monitor gnome-todo gnome-builder devhelp sysprof baobab seahorse fractal tilix tilix-nautilus seahorse-nautilus
+#apt install gnome-system-monitor gnome-todo gnome-builder devhelp sysprof baobab seahorse tilix tilix-nautilus seahorse-nautilus
 #
 # GNOME Games:
 #apt install gnome-chess gnome-2048 gnome-mahjongg gnome-mines

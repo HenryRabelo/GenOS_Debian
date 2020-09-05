@@ -4,19 +4,19 @@
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 #
 # Flatpak GNOME apps and themes:
-flatpak install -y Adwaita-dark Extensions Fragments Flatseal
+flatpak install -y Adwaita-dark Extensions Fragments Fractal
 #
 # Sandboxed GNOME Apps:
-flatpak install -y gedit Evince Firefox Geary Lollypop Calendar Clocks
+flatpak install -y DejaDup gnome.Notes Firefox Geary Lollypop Calendar Clocks
 #
 # Sandboxed GNOME Recorders:
 #flatpak install -y SoundRecorder Cheese
 #
 # Sandboxed GNOME Utils:
-flatpak install -y gnome.Calculator Characters Logs DejaDup gnome.Notes
+#flatpak install -y gnome.Calculator gedit Evince Characters Logs Font-Viewer
 #
 # Sandboxed GNOME Dev Utils:
-#flatpak install -y gnome.Todo Builder DevHelp Seahorse Fractal
+#flatpak install -y gnome.Todo Builder DevHelp Seahorse
 #
 # Sandboxed GNOME Games:
 #flatpak install -y gnome.Chess TwentyFortyEight Mahjongg Mines
