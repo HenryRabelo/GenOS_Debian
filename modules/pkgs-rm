@@ -1,25 +1,27 @@
 #!/bin/bash
 #
-# Generic Apps:
-apt remove -y transmission-gtk xterm firefox-esr
+# System will be Flatpak-centric #
 #
 # GNOME Plugins:
-apt remove -y nautilus-extension-gnome-terminal nautilus-extension-brasero nautilus-sendto
+apt purge -y nautilus-extension-gnome-terminal nautilus-extension-brasero nautilus-sendto
 #
 # GNOME Core Apps:
-apt remove gedit gnome-clocks gnome-calendar
-#
-# GNOME Accessories:
-apt remove -y gnome-{maps,documents,todo,contacts,weather,music,sound-recorder,tweaks} evolution vinagre
+apt purge -y firefox-esr evolution gnome-calendar gnome-clocks gnome-contacts gnome-weather gnome-maps gnome-sound-recorder
 #
 # GNOME Multimedia:
-apt remove -y shotwell eog cheese rhythmbox simple-scan
+apt purge -y shotwell rhythmbox simple-scan
+#apt purge -y gnome-music eog totem cheese
+#
+# GNOME Utils:
+apt purge -y gnome-calculator gnome-screenshot gnome-characters evince file-roller transmission-common
+#
+# GNOME System Apps:
+apt purge -y gnome-logs gnome-font-viewer gnome-extensions
 #
 # GNOME Developer Tools:
-apt remove -y gnome-system-monitor baobab seahorse
+apt remove -y gnome-system-monitor gnome-todo gnome-tweaks baobab seahorse vinagre network-manager-gnome xterm
 #
 # GNOME Games:
-apt remove -y quadrapassel iagno lightsoff swell-foop hitori tali four-in-a-row five-or-more aisleriot gnome-sudoku gnome-mahjongg gnome-chess gnome-mines gnome-robots gnome-klotski gnome-tetravex gnome-taquin gnome-nibbles
-#
-apt autoremove -y
+apt purge -y gnome-games
+#apt purge -y quadrapassel iagno lightsoff swell-foop hitori tali four-in-a-row five-or-more aisleriot gnome-sudoku gnome-mahjongg gnome-chess gnome-mines gnome-robots gnome-klotski gnome-tetravex gnome-taquin gnome-nibbles
 #

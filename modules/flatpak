@@ -1,23 +1,35 @@
 #!/bin/bash
 #
-# Adds Flathub repositories:
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+# Fedora Flatpak repository:
+flatpak remote-add --if-not-exists fedora oci+https://registry.fedoraproject.org
 #
-# Flatpak GNOME apps and themes:
-flatpak install -y Adwaita-dark Extensions Fragments Fractal
+# Flathub Flatpak repository:
+#flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+#
+# Appcenter Flatpak repository:
+#flatpak remote-add --user appcenter https://flatpak.elementary.io/appcenter.flatpakrepo
+#
+# Elementary Apps Flatpak repository:
+#flatpak remote-add --system elementary https://flatpak.elementary.io/elementary.flatpakrepo
+#
+# Sandboxed GenOS Multimedia:
+#flatpak install -y elementary Music Photos Videos Camera
 #
 # Sandboxed GNOME Apps:
-flatpak install -y DejaDup gnome.Notes Firefox Geary Lollypop Calendar Clocks
-#
-# Sandboxed GNOME Recorders:
-#flatpak install -y SoundRecorder Cheese
+flatpak install -y fedora Firefox Geary Calendar Clocks Contacts Weather Maps gnome.Notes SoundRecorder
 #
 # Sandboxed GNOME Utils:
-#flatpak install -y gnome.Calculator gedit Evince Characters Logs Font-Viewer
+flatpak install -y fedora gnome.Calculator Screenshot Characters Evince FileRoller
+#
+# Sandboxed GNOME System Apps:
+flatpak install -y fedora Logs Font-Viewer Extensions
 #
 # Sandboxed GNOME Dev Utils:
-#flatpak install -y gnome.Todo Builder DevHelp Seahorse
+#flatpak install -y flathub gnome.Todo Builder Boxes DevHelp Seahorse
 #
 # Sandboxed GNOME Games:
-#flatpak install -y gnome.Chess TwentyFortyEight Mahjongg Mines
+#flatpak install -y flathub gnome.Chess TwentyFortyEight Mahjongg Mines Games
+#
+# Sandboxed GenOS Apps:
+#flatpak install -y flathub DejaDup Fragments Fractal GFeeds PasswordSafe Authenticator Flatseal
 #
