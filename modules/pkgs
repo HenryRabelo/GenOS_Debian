@@ -11,11 +11,8 @@ apt install -y firmware-linux firmware-iwlwifi firmware-misc-nonfree mesa-vulkan
 #apt install -y nvidia-driver nvidia-kernel-dkms
 #apt install -y firmware-amd-graphics
 #
-# GNOME Desktop:
-apt install -y network-manager gnome-{bluetooth,online-miners,color-manager,sushi,disk-utility} nautilus
-#
 # Backend:
-apt install -y flatpak tuned wget unar chrome-gnome-shell gamemode
+apt install -y flatpak tuned wget chrome-gnome-shell gamemode
 #
 # Theming:
 apt install -y plymouth-themes adwaita-icon-theme gnome-backgrounds
@@ -50,4 +47,7 @@ apt install -y gnome-usage gnome-terminal
 #
 # GNOME Games:
 #apt install -y gnome-chess gnome-2048 gnome-mahjongg gnome-mines
+#
+# Safe point to clean dependencies:
+apt autoremove --purge -y
 #

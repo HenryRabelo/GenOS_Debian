@@ -16,12 +16,16 @@ apt purge -y shotwell rhythmbox simple-scan
 apt purge -y gnome-calculator gnome-screenshot gnome-characters evince file-roller transmission-common
 #
 # GNOME System Apps:
-apt purge -y gnome-logs gnome-font-viewer gnome-extensions
+apt purge -y gnome-logs gnome-font-viewer malcontent-gui im-config synaptic vinagre network-manager-gnome xterm
 #
 # GNOME Developer Tools:
-apt remove -y gnome-system-monitor gnome-todo gnome-tweaks baobab seahorse vinagre network-manager-gnome xterm
+apt purge -y gnome-system-monitor gnome-todo gnome-tweaks baobab seahorse
 #
 # GNOME Games:
-apt purge -y gnome-games
-#apt purge -y quadrapassel iagno lightsoff swell-foop hitori tali four-in-a-row five-or-more aisleriot gnome-sudoku gnome-mahjongg gnome-chess gnome-mines gnome-robots gnome-klotski gnome-tetravex gnome-taquin gnome-nibbles
+#apt purge -y gnome-games
+apt purge -y quadrapassel iagno lightsoff swell-foop hitori tali four-in-a-row five-or-more aisleriot gnome-sudoku gnome-mahjongg gnome-chess gnome-mines gnome-robots gnome-klotski gnome-tetravex gnome-taquin gnome-nibbles
+#
+# Mark remaining packages as Manually Installed, so autoremove won't touch them:
+apt install -y fonts-noto-color-emoji iptables network-manager p7zip p7zip-full p7zip-rar media-player-info mobile-broadband-provider-info wpasupplicant dns-root-data dnsmasq-base geoclue-2.0 tasksel malcontent
+#apt install -y network-manager gnome-{bluetooth,online-miners,color-manager,sushi,disk-utility} nautilus
 #
