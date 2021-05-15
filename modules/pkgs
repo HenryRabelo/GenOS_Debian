@@ -12,7 +12,7 @@ apt install -y firmware-linux firmware-iwlwifi firmware-misc-nonfree mesa-vulkan
 #apt install -y firmware-amd-graphics
 #
 # Backend:
-apt install -y flatpak tuned wget chrome-gnome-shell gamemode
+apt install -y flatpak tuned wget p7zip-rar chrome-gnome-shell gamemode
 #
 # Theming:
 apt install -y plymouth-themes adwaita-icon-theme gnome-backgrounds
@@ -25,7 +25,7 @@ apt install -y plymouth-themes adwaita-icon-theme gnome-backgrounds
 apt install -y gnome-shell-extensions gnome-shell-extension-{dashtodock,caffeine,appindicator,desktop-icons}
 #
 # GenOS Settings:
-apt install -y gnome-software gnome-software-plugin-flatpak
+apt install -y firefox gnome-software gnome-software-plugin-flatpak
 #
 # Core GNOME Apps:
 #apt install -y gedit geary gnome-calendar gnome-clocks bijiben gnome-sound-recorder
@@ -34,7 +34,7 @@ apt install -y gnome-software gnome-software-plugin-flatpak
 apt install -y gnome-music gnome-photos totem cheese
 #
 # GNOME System Apps:
-#apt install -y gnome-control-center gnome-logs deja-dup
+#apt install -y gnome-control-center gnome-logs gnome-font-viewer deja-dup gnome-extensions-app
 #
 # GNOME Utils:
 #apt install -y gnome-calculator gnome-screenshot gnome-characters gnome-logs evince file-roller
