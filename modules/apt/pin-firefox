@@ -1,0 +1,9 @@
+
+Package: firefox
+Pin: release a=unstable
+Pin-Priority: 1001
+
+Package: libnss3
+Pin: release a=unstable
+Pin-Priority: 1001
+
